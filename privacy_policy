@@ -1,1 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Arrows: Escape Puzzle</title>
+<meta name="description" content="Privacy Policy for Arrows: Escape Puzzle (com.bhushangames.arrows) — what the game stores on your device, what leaves it, and how to control it.">
+<style>
+  :root {
+    --ground:  #FAFBFD;
+    --surface: #FFFFFF;
+    --ink:     #101A33;
+    --body:    #2C3854;
+    --muted:   #626E88;
+    --line:    #E2E7F0;
+    --accent:  #1D5BFF;
+    --accent-soft: #EAF0FF;
+    --yes:     #B4451F;
+    --no:      #1F6B4A;
+    --yes-bg:  #FBEEE8;
+    --no-bg:   #E8F3ED;
 
+    --display: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground:  #0A0F1C;
+      --surface: #121A2B;
+      --ink:     #E7EDF9;
+      --body:    #C2CCE0;
+      --muted:   #8894AF;
+      --line:    #222E48;
+      --accent:  #79A5FF;
+      --accent-soft: #16233E;
+      --yes:     #E8916B;
+      --no:      #6FC79E;
+      --yes-bg:  #2A1D17;
+      --no-bg:   #14261E;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:  #0A0F1C;
+    --surface: #121A2B;
+    --ink:     #E7EDF9;
+    --body:    #C2CCE0;
+    --muted:   #8894AF;
+    --line:    #222E48;
+    --accent:  #79A5FF;
+    --accent-soft: #16233E;
+    --yes:     #E8916B;
+    --no:      #6FC79E;
+    --yes-bg:  #2A1D17;
+    --no-bg:   #14261E;
+  }
+
+  :root[data-theme="light"] {
+    --ground:  #FAFBFD;
+    --surface: #FFFFFF;
+    --ink:     #101A33;
+    --body:    #2C3854;
+    --muted:   #626E88;
+    --line:    #E2E7F0;
+    --accent:  #1D5BFF;
+    --accent-soft: #EAF0FF;
+    --yes:     #B4451F;
+    --no:      #1F6B4A;
+    --yes-bg:  #FBEEE8;
+    --no-bg:   #E8F3ED;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--body);
+    font-family: var(--display);
+    font-size: 17px;
+    line-height: 1.72;
+  }
+
+  .wrap {
+    max-width: 45rem;
+    margin: 0 auto;
+    padding: 0 1.5rem 6rem;
+  }
+
+  /* ── Masthead ─────────────────────────────────────────── */
+  .masthead {
+    border-top: 4px solid var(--accent);
+    padding-top: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 1.25rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 6vw, 2.9rem);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    font-weight: 800;
+    color: var(--ink);
+    margin: 0 0 1.25rem;
+    text-wrap: balance;
+  }
+
+  .standfirst {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 2rem;
+    max-width: 34rem;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .meta b {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  /* ── Disclosure table ─────────────────────────────────── */
+  .disclosure {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1.75rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .disclosure h2 {
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.35rem;
+  }
+
+  .disclosure > p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 1.5rem;
+  }
+
+  .scroller { overflow-x: auto; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.94rem;
+    min-width: 30rem;
+  }
+
+  thead th {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    text-align: left;
+    padding: 0 0 0.75rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  tbody th {
+    text-align: left;
+    font-weight: 600;
+    color: var(--ink);
+    padding: 0.95rem 1.5rem 0.95rem 0;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+
+  tbody td {
+    padding: 0.95rem 1.5rem 0.95rem 0;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    color: var(--muted);
+  }
+
+  tbody tr:last-child th,
+  tbody tr:last-child td { border-bottom: 0; }
+
+  .flag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .flag.out  { color: var(--yes); background: var(--yes-bg); }
+  .flag.stay { color: var(--no);  background: var(--no-bg); }
+
+  /* ── Contents ─────────────────────────────────────────── */
+  nav.toc {
+    margin-bottom: 3.5rem;
+  }
+
+  nav.toc h2 {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    margin: 0 0 0.9rem;
+  }
+
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 0.4rem 2rem;
+  }
+
+  nav.toc a {
+    color: var(--body);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    font-size: 0.95rem;
+  }
+
+  nav.toc a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+
+  /* ── Sections ─────────────────────────────────────────── */
+  section { margin-bottom: 3rem; scroll-margin-top: 2rem; }
+
+  h2 {
+    font-size: 1.35rem;
+    letter-spacing: -0.018em;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 0.9rem;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-size: 1.02rem;
+    font-weight: 650;
+    color: var(--ink);
+    margin: 1.85rem 0 0.5rem;
+  }
+
+  p { margin: 0 0 1.1rem; }
+
+  section ul {
+    margin: 0 0 1.1rem;
+    padding-left: 1.15rem;
+  }
+
+  section li { margin-bottom: 0.5rem; }
+
+  a { color: var(--accent); }
+
+  a:focus-visible,
+  nav.toc a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  code {
+    font-family: var(--mono);
+    font-size: 0.86em;
+    background: var(--accent-soft);
+    color: var(--ink);
+    padding: 0.12em 0.4em;
+    border-radius: 4px;
+  }
+
+  .callout {
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1.1rem 1.35rem;
+    margin: 0 0 1.1rem;
+  }
+
+  .callout p:last-child { margin-bottom: 0; }
+
+  footer {
+    margin-top: 4.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--line);
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  footer p { margin: 0 0 0.4rem; }
+
+  @media (max-width: 34rem) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 1.15rem 4rem; }
+    .disclosure { padding: 1.25rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>What Arrows knows about you</h1>
+    <p class="standfirst">Short version: the game has no accounts and no logins, and your puzzle progress never leaves your phone. Two things do go out — ad requests and, if you allow notifications, a device token.</p>
+    <div class="meta">
+      <span>App&nbsp;<b>Arrows: Escape Puzzle</b></span>
+      <span>Package&nbsp;<b>com.bhushangames.arrows</b></span>
+      <span>Updated&nbsp;<b>7 August 2026</b></span>
+    </div>
+  </header>
+
+  <div class="disclosure">
+    <h2>What leaves your device</h2>
+    <p>Every category of data the app touches, and where it goes.</p>
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Data</th>
+            <th scope="col">Where it goes</th>
+            <th scope="col">Why</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Level progress, coins, stars</th>
+            <td><span class="flag stay">Stays on device</span></td>
+            <td>Saved locally so you can continue where you left off</td>
+          </tr>
+          <tr>
+            <th scope="row">Settings — sound, vibration, animation speed</th>
+            <td><span class="flag stay">Stays on device</span></td>
+            <td>Remembers your preferences between sessions</td>
+          </tr>
+          <tr>
+            <th scope="row">Advertising ID, device and approximate location signals</th>
+            <td><span class="flag out">Sent to Google AdMob</span></td>
+            <td>Serving and measuring the ads that keep the game free</td>
+          </tr>
+          <tr>
+            <th scope="row">Notification token</th>
+            <td><span class="flag out">Sent to Firebase</span></td>
+            <td>Only if you allow notifications — lets us send you updates</td>
+          </tr>
+          <tr>
+            <th scope="row">Name, email, phone, contacts, photos</th>
+            <td><span class="flag stay">Never collected</span></td>
+            <td>The game never asks for them and has no account system</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#scope">Who this covers</a></li>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#device">Data stored on your device</a></li>
+      <li><a href="#ads">Advertising</a></li>
+      <li><a href="#push">Push notifications</a></li>
+      <li><a href="#third-party">Third-party services</a></li>
+      <li><a href="#sharing">Sharing and selling</a></li>
+      <li><a href="#controls">Your controls</a></li>
+      <li><a href="#deletion">Deleting your data</a></li>
+      <li><a href="#children">Children's privacy</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="scope">
+    <h2>Who this covers</h2>
+    <p>This policy applies to the mobile game <b>Arrows: Escape Puzzle</b> (package <code>com.bhushangames.arrows</code>) on Android and iOS. In this document, "we", "our" and "us" mean the developer of the app; "you" means the person using it.</p>
+    <p>By installing and playing the game, you accept the practices described here. If you do not agree with them, please uninstall the app.</p>
+  </section>
+
+  <section id="collect">
+    <h2>Information we collect</h2>
+    <p>The game has no accounts, no sign-in, and no profile. We never ask you for your name, email address, phone number, contacts, photos, or precise location, and the app requests no permission to read any of them.</p>
+    <p>Three things are nonetheless worth spelling out: what the game saves locally, what the advertising SDK sends, and what happens when you allow notifications. Each has its own section below.</p>
+  </section>
+
+  <section id="device">
+    <h2>Data stored on your device</h2>
+    <p>The app keeps a small local database and a preferences file in its own private storage area, which no other app can read. That storage holds:</p>
+    <ul>
+      <li>Level progress, current level, stars earned, and coin balance</li>
+      <li>Daily challenge history and achievements</li>
+      <li>Settings — sound on/off, vibration, animation speed, ad-free status</li>
+    </ul>
+    <p>None of this is uploaded, backed up to our servers, or shared with anyone. It exists only on your phone, and it is removed when you uninstall the app.</p>
+  </section>
+
+  <section id="ads">
+    <h2>Advertising</h2>
+    <p>The game is free and is funded by ads served through <b>Google AdMob</b>. You may see banner ads, full-screen ads between levels, rewarded ads you choose to watch, and an ad when opening the app.</p>
+    <p>To serve and measure these ads, Google receives information from your device. This typically includes your advertising identifier, device type and operating system version, general location inferred from your IP address, and how you interacted with an ad. We do not receive this data ourselves — it goes directly from the Google SDK inside the app to Google, and we only see aggregate earnings reports.</p>
+    <p>How Google uses it is governed by Google's own policies, linked in <a href="#third-party">Third-party services</a>.</p>
+  </section>
+
+  <section id="push">
+    <h2>Push notifications</h2>
+    <p>The app asks whether you want to receive notifications about new content and reminders. This is your choice, and the game is fully playable if you decline.</p>
+    <p>If you allow them, <b>Firebase Cloud Messaging</b> issues your device a registration token — a random identifier that lets a message reach your phone. It is not tied to your identity and contains no personal information. We use it only to deliver game notifications, and we never sell or share the token list.</p>
+    <p>You can turn notifications off at any time in your device settings, which stops all messages regardless of the token.</p>
+  </section>
+
+  <section id="third-party">
+    <h2>Third-party services</h2>
+    <p>The app includes two Google services that process data outside our control. We recommend reading their policies:</p>
+    <ul>
+      <li><b>Google AdMob</b> — ad serving and measurement.<br><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> · <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">How AdMob uses data</a></li>
+      <li><b>Firebase Cloud Messaging</b> — delivering push notifications.<br><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a></li>
+    </ul>
+    <p>The app does not include any analytics or behaviour-tracking SDK. We do not measure which levels you play, how long you play, or what you tap.</p>
+  </section>
+
+  <section id="sharing">
+    <h2>Sharing and selling</h2>
+    <p>We do not sell your data. We do not trade, rent, or share it with data brokers, advertisers other than the AdMob network described above, or any other third party.</p>
+    <p>We would disclose information only where the law requires it — for example, a valid court order — and only to the extent required.</p>
+  </section>
+
+  <section id="controls">
+    <h2>Your controls</h2>
+
+    <h3>Turn off personalised ads</h3>
+    <p>On Android, open <b>Settings → Google → Ads</b> and turn on "Delete advertising ID" or "Opt out of Ads Personalisation". On iOS, open <b>Settings → Privacy &amp; Security → Tracking</b> and turn off "Allow Apps to Request to Track". Ads will still appear, but they will no longer be personalised.</p>
+
+    <h3>Turn off notifications</h3>
+    <p>Open your device settings, find <b>Arrows</b> in the app list, and disable notifications. You can re-enable them the same way.</p>
+
+    <h3>Reset your game data</h3>
+    <p>Clearing the app's storage from your device settings erases all local progress and returns the game to a fresh state. This cannot be undone.</p>
+  </section>
+
+  <section id="deletion">
+    <h2>Deleting your data</h2>
+    <p>Because we hold no account and no server-side profile, there is nothing for us to delete on request.</p>
+    <div class="callout">
+      <p><b>Uninstalling the app removes everything it stored on your device</b> — progress, settings, and the notification token. Data already collected by Google through the ad SDK is subject to Google's own retention and deletion policies, which you can manage through your Google account.</p>
+    </div>
+    <p>If you would still like written confirmation, or have a question about your data, write to us at the address in <a href="#contact">Contact us</a>.</p>
+  </section>
+
+  <section id="children">
+    <h2>Children's privacy</h2>
+    <p>The game contains no violent, adult, or otherwise mature content and is suitable for all ages. We do not knowingly collect personal information from children under 13, and the app has no feature that would let a child submit any.</p>
+    <p>Note that the app does show advertisements supplied by Google's network. Parents who prefer their child not see personalised advertising can opt out using the steps in <a href="#controls">Your controls</a>.</p>
+    <p>If you believe a child has provided us personal information, please contact us and we will act promptly.</p>
+  </section>
+
+  <section id="security">
+    <h2>Security</h2>
+    <p>Game data lives in the app's private storage, isolated by the operating system so other apps cannot read it. Communication with Google's advertising and messaging services uses encrypted connections.</p>
+    <p>No system is perfectly secure, but since the app holds no personal information, there is very little to expose in the first place.</p>
+  </section>
+
+  <section id="changes">
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy when the app changes — for example, if we add a feature that handles data differently. The "Updated" date at the top always reflects the current version, and material changes will be announced in the app.</p>
+    <p>Continuing to use the game after an update means you accept the revised policy.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact us</h2>
+    <p>Questions, concerns, or requests about this policy or your data:</p>
+    <p><a href="mailto:bhushan.borse@gobuildmart.com">bhushan.borse@gobuildmart.com</a></p>
+    <p>We aim to reply within a few working days.</p>
+  </section>
+
+  <footer>
+    <p>Arrows: Escape Puzzle · com.bhushangames.arrows</p>
+    <p>Last updated 7 August 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
