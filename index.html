@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ==========================================================================
+       BHUSHAN GAMES · Home
+       Featured games render from js/games-data.js — never edit this file to add
+       or remove a title.
+       ========================================================================== -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2563EB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+
+  <title>Bhushan Games — Independent Mobile Game Studio for Android</title>
+  <meta name="description" content="Bhushan Games is an independent mobile game studio building calm, offline-first puzzle and casual games for Android. Merge 2248 is live on Google Play; ARROWS – Escape Puzzle is in testing.">
+  <meta name="keywords" content="bhushan games, mobile game studio, android game developer, indie game studio india, offline puzzle games, google play developer">
+  <meta name="author" content="Bhushan Games">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://bborse.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bhushan Games">
+  <meta property="og:title" content="Bhushan Games — Independent Mobile Game Studio">
+  <meta property="og:description" content="Offline-first puzzle and casual games for Android. No energy timers, no forced ads, no dark patterns.">
+  <meta property="og:url" content="https://bborse.github.io/">
+  <meta property="og:image" content="https://bborse.github.io/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bhushan Games — Independent Mobile Game Studio">
+  <meta name="twitter:description" content="Offline-first puzzle and casual games for Android.">
+  <meta name="twitter:image" content="https://bborse.github.io/images/og-image.png">
+
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"></noscript>
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bborse.github.io/#organization",
+        "name": "Bhushan Games",
+        "url": "https://bborse.github.io/",
+        "logo": "https://bborse.github.io/images/logo.svg",
+        "description": "Independent mobile game studio building offline-first puzzle and casual games for Android.",
+        "foundingDate": "2024",
+        "email": "bhushanborse220@gmail.com",
+        "sameAs": [
+          "https://instagram.com/#",
+          "https://facebook.com/#",
+          "https://reddit.com/r/#",
+          "https://youtube.com/#",
+          "https://github.com/#"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bborse.github.io/#website",
+        "url": "https://bborse.github.io/",
+        "name": "Bhushan Games",
+        "inLanguage": "en-US",
+        "publisher": { "@id": "https://bborse.github.io/#organization" }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body data-page="home">
+
+  <!-- Page loader -->
+  <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading Bhushan Games">
+    <div class="loader__mark">
+      <svg viewBox="0 0 64 64" width="64" height="64" aria-hidden="true" focusable="false">
+        <path class="loader__arrow" d="M20 16h13a8 8 0 0 1 0 16H20Zm0 16h15a8 8 0 0 1 0 16H20Z"
+              fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <p class="loader__text">BHUSHAN</p>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <div class="cursor" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__mount" id="siteHeader"></div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+  <main id="main">
+
+    <!-- ====================== STUDIO HERO ====================== -->
+    <section class="studio-hero">
+      <div class="studio-hero__bg" aria-hidden="true">
+        <span class="blob blob--1"></span>
+        <span class="blob blob--2"></span>
+        <span class="grid-fade"></span>
+        <img class="hero-icon hero-icon--1" src="/images/games/merge-2248/icon.svg" width="74" height="74" alt="" data-parallax="0.05">
+        <img class="hero-icon hero-icon--2" src="/images/games/arrows/icon.svg" width="58" height="58" alt="" data-parallax="-0.07">
+        <img class="hero-icon hero-icon--3" src="/images/games/arrows/icon.svg" width="84" height="84" alt="" data-parallax="0.06">
+        <img class="hero-icon hero-icon--4" src="/images/games/merge-2248/icon.svg" width="52" height="52" alt="" data-parallax="-0.05">
+      </div>
+
+      <div class="container studio-hero__inner">
+        <p class="pill" data-animate="fade-up">
+          <span class="pill__dot" aria-hidden="true"></span>
+          Independent studio · Android · <strong>2 titles and counting</strong>
+        </p>
+
+        <!-- Each line is its own block so the headline always breaks in the
+             same place instead of re-wrapping wherever the text happens to run out. -->
+        <h1 class="studio-hero__title" data-animate="fade-up" data-animate-delay="60">
+          <span class="studio-hero__line">We make <span class="grad">mobile games</span></span>
+          <span class="studio-hero__line">worth keeping installed</span>
+        </h1>
+
+        <p class="studio-hero__lede" data-animate="fade-up" data-animate-delay="120">
+          Bhushan Games is a small independent studio building offline-first puzzle and casual
+          games for Android. No energy timers, no forced video to continue, no notification
+          begging you back — just games that respect the twenty minutes you gave them.
+        </p>
+
+        <div class="studio-hero__cta" data-animate="fade-up" data-animate-delay="180">
+          <a class="btn btn--primary btn--lg" href="/games.html" data-ripple>
+            Browse our games
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+              <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="/about.html" data-ripple>About the studio</a>
+        </div>
+
+        <ul class="studio-hero__marks" data-animate="fade-up" data-animate-delay="240">
+          <li class="glass-chip">Offline first</li>
+          <li class="glass-chip">Hand-made levels</li>
+          <li class="glass-chip">No dark patterns</li>
+          <li class="glass-chip">Under 25 MB</li>
+        </ul>
+      </div>
+
+      <div class="divider divider--bottom" aria-hidden="true">
+        <svg viewBox="0 0 1440 110" preserveAspectRatio="none" focusable="false">
+          <path d="M0 60c180 40 360 50 540 30s360-70 540-60 240 50 360 60v20H0Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ====================== FEATURED GAMES ====================== -->
+    <section class="section section--alt" id="games" aria-labelledby="featured-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-animate="fade-up">Our games</p>
+          <h2 class="section__title" id="featured-title" data-animate="fade-up" data-animate-delay="60">
+            Currently on the shelf
+          </h2>
+          <p class="section__sub" data-animate="fade-up" data-animate-delay="100">
+            Two titles today, more on the way. Every one of them plays offline and starts
+            in under a second.
+          </p>
+        </header>
+
+        <!-- Cards are generated from js/games-data.js -->
+        <div class="games-grid" id="featuredGames"></div>
+
+        <p class="contact__actions" data-animate="fade-up">
+          <a class="btn btn--outline" href="/games.html" data-ripple>See the full catalogue</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================== STATS ====================== -->
+    <section class="stats" aria-labelledby="stats-title">
+      <div class="stats__glow" aria-hidden="true"></div>
+      <div class="container">
+        <h2 class="visually-hidden" id="stats-title">The studio in numbers</h2>
+        <ul class="stats__grid">
+          <li class="stat" data-animate="zoom-in">
+            <p class="stat__value"><span id="totalGames" data-counter="0">0</span></p>
+            <p class="stat__label">Titles</p>
+          </li>
+          <li class="stat" data-animate="zoom-in" data-animate-delay="80">
+            <p class="stat__value"><span id="liveGames" data-counter="0">0</span></p>
+            <p class="stat__label">Live now</p>
+          </li>
+          <li class="stat" data-animate="zoom-in" data-animate-delay="160">
+            <p class="stat__value"><span data-counter="50" data-counter-suffix="K+">0</span></p>
+            <p class="stat__label">Installs</p>
+          </li>
+          <li class="stat" data-animate="zoom-in" data-animate-delay="240">
+            <p class="stat__value"><span data-counter="100" data-counter-suffix="%">0</span></p>
+            <p class="stat__label">Offline</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====================== HOW WE BUILD ====================== -->
+    <section class="section" id="values" aria-labelledby="values-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-animate="fade-up">How we build</p>
+          <h2 class="section__title" id="values-title" data-animate="fade-up" data-animate-delay="60">
+            Four rules we do not bend
+          </h2>
+          <p class="section__sub" data-animate="fade-up" data-animate-delay="100">
+            These are not marketing lines — they are the reasons some features never
+            make it into our games.
+          </p>
+        </header>
+
+        <!-- Filled from SITE.values in js/site-config.js -->
+        <ul class="features-grid" data-render="values"></ul>
+      </div>
+    </section>
+
+    <!-- ====================== PROCESS ====================== -->
+    <section class="section section--alt" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-animate="fade-up">From idea to store</p>
+          <h2 class="section__title" id="process-title" data-animate="fade-up" data-animate-delay="60">
+            How a Bhushan game gets made
+          </h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item" data-animate="fade-right">
+            <span class="timeline__marker" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="timeline__card">
+              <p class="timeline__step">01</p>
+              <h3 class="timeline__title">One mechanic, tested to death</h3>
+              <p class="timeline__text">
+                A prototype has to be fun with placeholder art and no sound. If it needs
+                polish to be interesting, the idea gets shelved.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item" data-animate="fade-left">
+            <span class="timeline__marker" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" focusable="false"><path d="M12 3a4.5 4.5 0 0 1 4.5 4.5c1.4.5 2.5 1.9 2.5 3.6 0 1.2-.5 2.2-1.3 2.9.2.5.3 1 .3 1.5A3.5 3.5 0 0 1 12 19a3.5 3.5 0 0 1-6-2.5c0-.5.1-1 .3-1.5A3.7 3.7 0 0 1 5 11.1c0-1.7 1.1-3.1 2.5-3.6A4.5 4.5 0 0 1 12 3Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="timeline__card">
+              <p class="timeline__step">02</p>
+              <h3 class="timeline__title">Levels made by hand</h3>
+              <p class="timeline__text">
+                Every level is authored, solved and difficulty-rated by a person before it
+                ships. Generated content is cheap, and it plays cheap.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item" data-animate="fade-right">
+            <span class="timeline__marker" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" focusable="false"><path d="M13 2 4 14h6l-1 8 9-12h-6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="timeline__card">
+              <p class="timeline__step">03</p>
+              <h3 class="timeline__title">Tuned for the phone you own</h3>
+              <p class="timeline__text">
+                We test on entry-level hardware first. Under 25 MB, instant cold start and a
+                steady frame rate on devices from 2017.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item" data-animate="fade-left">
+            <span class="timeline__marker" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" focusable="false"><path d="M12 3a9 9 0 1 0 9 9" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M21 3v6h-6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div class="timeline__card">
+              <p class="timeline__step">04</p>
+              <h3 class="timeline__title">Shipped, then kept alive</h3>
+              <p class="timeline__text">
+                Closed testing, staged rollout, then monthly content. Bug reports are read
+                and answered by the person who wrote the code.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====================== CTA ====================== -->
+    <section class="cta" id="follow">
+      <div class="cta__bg" aria-hidden="true">
+        <span class="blob blob--cta-1"></span>
+        <span class="blob blob--cta-2"></span>
+      </div>
+      <div class="container cta__inner">
+        <h2 class="cta__title" data-animate="fade-up">Play something we made</h2>
+        <p class="cta__text" data-animate="fade-up" data-animate-delay="80">
+          Everything we publish is free to start, works offline and fits in the gaps
+          of your day. Pick one.
+        </p>
+        <div class="cta__actions" data-animate="zoom-in" data-animate-delay="140">
+          <a class="btn btn--primary btn--lg" href="/games.html" data-ripple>Browse the catalogue</a>
+          <a class="btn btn--outline" href="/contact.html" data-ripple>Work with us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="siteFooter"></footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <path d="M12 19V5m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Data first, then templates, then the runtime -->
+  <script src="/js/games-data.js" defer></script>
+  <script src="/js/site-config.js" defer></script>
+  <script src="/js/templates.js" defer></script>
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

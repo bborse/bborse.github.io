@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="ARROWS key art">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#60A5FA"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F172A"/><stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="55%">
+      <stop offset="0" stop-color="#60A5FA" stop-opacity=".5"/><stop offset="1" stop-color="#60A5FA" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#FFFFFF" stroke-opacity=".05" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect width="1280" height="720" fill="url(#grid)"/>
+  <rect width="1280" height="720" fill="url(#halo)"/>
+  
+  <g opacity=".45" fill="none" stroke="#60A5FA" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(150 150) rotate(-14) scale(1.6)"><path d="M8 24h26M25 15l9 9-9 9"/></g>
+    <g transform="translate(1030 520) rotate(12) scale(1.9)"><path d="M8 24h26M25 15l9 9-9 9"/></g>
+    <g transform="translate(1080 140) rotate(28) scale(1.1)"><path d="M8 24h26M25 15l9 9-9 9"/></g>
+    <g transform="translate(190 540) rotate(-6) scale(1.2)"><path d="M8 24h26M25 15l9 9-9 9"/></g>
+  </g>
+  <g font-family="Poppins, sans-serif" text-anchor="middle">
+    <text x="640" y="392" font-size="76" font-weight="800" fill="#FFFFFF" letter-spacing="-2.5">ARROWS</text>
+    <text x="640" y="442" font-size="24" font-weight="500" fill="#60A5FA" letter-spacing="6">ESCAPE PUZZLE</text>
+  </g>
+</svg>

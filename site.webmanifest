@@ -1,0 +1,19 @@
+{
+  "name": "Bhushan Games",
+  "short_name": "Bhushan",
+  "description": "Independent mobile game studio building offline-first puzzle and casual games for Android.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2563EB",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["games", "puzzle", "entertainment"],
+  "icons": [
+    { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/images/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

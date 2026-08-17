@@ -1,0 +1,10 @@
+# robots.txt for Bhushan Games
+# Replace the host below with your production domain before going live.
+
+User-agent: *
+Allow: /
+
+Disallow: /tools/
+Disallow: /assets/private/
+
+Sitemap: https://bborse.github.io/sitemap.xml

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Merge 2248 app icon">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C3AED"/><stop offset="1" stop-color="#A78BFA"/></linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".2"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="115.2" fill="url(#g)"/>
+  <rect width="512" height="281.6" rx="115.2" fill="url(#sheen)"/>
+  <g transform="translate(256 256)" text-anchor="middle" font-family="Poppins, sans-serif" fill="#FFFFFF">
+    <rect x="-152" y="-150" width="140" height="140" rx="36" fill="#FFFFFF" fill-opacity=".18"/>
+    <rect x="12" y="-150" width="140" height="140" rx="36" fill="#FFFFFF" fill-opacity=".18"/>
+    <rect x="-152" y="14" width="140" height="140" rx="36" fill="#FFFFFF" fill-opacity=".18"/>
+    <rect x="12" y="14" width="140" height="140" rx="36" fill="#FFFFFF"/>
+    <text x="-82" y="-58" font-size="62" font-weight="700">2</text>
+    <text x="82" y="-58" font-size="62" font-weight="700">2</text>
+    <text x="-82" y="106" font-size="62" font-weight="700">4</text>
+    <text x="82" y="106" font-size="62" font-weight="800" fill="#7C3AED">8</text>
+  </g>
+</svg>

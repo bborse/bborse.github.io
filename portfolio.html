@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ==========================================================================
+       BHUSHAN GAMES · Developer portfolio
+       Milestones and capabilities come from js/site-config.js.
+       ========================================================================== -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2563EB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+
+  <title>Developer Portfolio | Bhushan Games — Android Game Development</title>
+  <meta name="description" content="Developer portfolio of Bhushan Games: Android game development, level design, Google Play publishing and live operations. Shipped titles, capabilities and timeline.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bborse.github.io/portfolio.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bhushan Games">
+  <meta property="og:title" content="Developer Portfolio | Bhushan Games">
+  <meta property="og:description" content="Android game development, level design, Google Play publishing and live operations.">
+  <meta property="og:url" content="https://bborse.github.io/portfolio.html">
+  <meta property="og:image" content="https://bborse.github.io/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Developer Portfolio | Bhushan Games">
+  <meta name="twitter:description" content="Android game development, publishing and live operations.">
+  <meta name="twitter:image" content="https://bborse.github.io/images/og-image.png">
+
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"></noscript>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body data-page="static">
+
+  <div class="cursor" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="navbar is-scrolled" id="navbar">
+    <div class="navbar__mount" id="siteHeader"></div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+  <main id="main">
+
+    <section class="legal-hero">
+      <div class="container legal-hero__inner">
+        <h1>Developer portfolio</h1>
+        <p>
+          What we build, how we ship it, and what we have put on Google Play so far.
+          If you are hiring, partnering or looking for a publisher, this is the short version.
+        </p>
+        <div class="legal-meta">
+          <span>Focus <strong>Android · Unity &amp; native</strong></span>
+          <span>Since <strong>2024</strong></span>
+          <span><a href="/contact.html">Work with us</a></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== CAPABILITIES ====================== -->
+    <section class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-animate="fade-up">Capabilities</p>
+          <h2 class="section__title" id="skills-title" data-animate="fade-up" data-animate-delay="60">
+            End to end, in-house
+          </h2>
+          <p class="section__sub" data-animate="fade-up" data-animate-delay="100">
+            Prototype to store listing to the update three months later — the same people do
+            all of it, which is why nothing gets lost in a handover.
+          </p>
+        </header>
+
+        <!-- Filled from SITE.skills in js/site-config.js -->
+        <ul class="features-grid" data-render="skills"></ul>
+      </div>
+    </section>
+
+    <!-- ====================== SHIPPED WORK ====================== -->
+    <section class="section section--alt" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-animate="fade-up">Shipped work</p>
+          <h2 class="section__title" id="work-title" data-animate="fade-up" data-animate-delay="60">
+            Titles we have published
+          </h2>
+        </header>
+
+        <!-- Same card component as the catalogue, same data source -->
+        <div class="games-grid" id="featuredGames"></div>
+      </div>
+    </section>
+
+    <!-- ====================== TIMELINE ====================== -->
+    <section class="section" aria-labelledby="timeline-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow" data-animate="fade-up">Timeline</p>
+          <h2 class="section__title" id="timeline-title" data-animate="fade-up" data-animate-delay="60">
+            How we got here
+          </h2>
+        </header>
+
+        <!-- Filled from SITE.milestones in js/site-config.js -->
+        <ol class="timeline" data-render="milestones"></ol>
+      </div>
+    </section>
+
+    <!-- ====================== TECH ====================== -->
+    <section class="section section--alt" aria-labelledby="tech-title">
+      <div class="container container--narrow">
+        <header class="section__head">
+          <p class="eyebrow" data-animate="fade-up">Toolchain</p>
+          <h2 class="section__title" id="tech-title" data-animate="fade-up" data-animate-delay="60">
+            What we work with
+          </h2>
+        </header>
+
+        <div class="legal-body">
+          <div class="legal-table-wrap" data-animate="fade-up">
+            <table class="legal-table">
+              <caption class="visually-hidden">Tools and platforms used at Bhushan Games</caption>
+              <thead>
+                <tr><th scope="col">Area</th><th scope="col">Tools</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Engine</th><td>Unity (C#), native Android (Kotlin) for lightweight titles</td></tr>
+                <tr><th scope="row">Design</th><td>Figma, hand-authored level editors built per game</td></tr>
+                <tr><th scope="row">Store</th><td>Google Play Console — closed testing tracks, staged rollouts, ASO</td></tr>
+                <tr><th scope="row">Monetisation</th><td>AdMob banners with a one-time removal purchase; Play Billing</td></tr>
+                <tr><th scope="row">Quality</th><td>Play Console vitals, crash triage, low-end device test matrix</td></tr>
+                <tr><th scope="row">Web</th><td>This site: hand-written HTML, CSS and vanilla JavaScript — no framework</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta__bg" aria-hidden="true">
+        <span class="blob blob--cta-1"></span><span class="blob blob--cta-2"></span>
+      </div>
+      <div class="container cta__inner">
+        <h2 class="cta__title" data-animate="fade-up">Have something in mind?</h2>
+        <p class="cta__text" data-animate="fade-up" data-animate-delay="80">
+          Contract work, publishing, a game that needs finishing — tell us what it is and we
+          will tell you honestly whether we are the right studio for it.
+        </p>
+        <div class="cta__actions" data-animate="zoom-in" data-animate-delay="140">
+          <a class="btn btn--primary btn--lg" href="/contact.html" data-ripple>Start a conversation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="siteFooter"></footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <path d="M12 19V5m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="/js/games-data.js" defer></script>
+  <script src="/js/site-config.js" defer></script>
+  <script src="/js/templates.js" defer></script>
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

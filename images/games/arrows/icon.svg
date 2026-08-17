@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="ARROWS app icon">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="0.55" stop-color="#3B82F6"/><stop offset="1" stop-color="#60A5FA"/></linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="115.2" fill="url(#g)"/>
+  <rect width="512" height="281.6" rx="115.2" fill="url(#sheen)"/>
+  <g transform="translate(256.0 256.0) scale(8.0000) translate(-32 -32)"
+     fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 32h30M33 20l12 12-12 12"/>
+  </g>
+  <g transform="translate(256.0 256.0) scale(8.0000) translate(-32 -32)"
+     fill="none" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="4" stroke-linecap="round">
+    <path d="M14 16h14M14 48h14"/>
+  </g>
+</svg>

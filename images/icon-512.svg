@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Bhushan Games logo">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="0.55" stop-color="#3B82F6"/><stop offset="1" stop-color="#60A5FA"/></linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="115.2" fill="url(#g)"/>
+  <rect width="512" height="281.6" rx="115.2" fill="url(#sheen)"/>
+  <g transform="translate(256.0 256.0) scale(8.0000) translate(-32 -32)">
+    <path d="M20 16h13a8 8 0 0 1 0 16H20Zm0 16h15a8 8 0 0 1 0 16H20Z"
+          fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linejoin="round"/>
+    <circle cx="47" cy="17" r="3.6" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ==========================================================================
+       BHUSHAN GAMES · Game detail template
+       ONE file serves EVERY game: /game.html?slug=<slug>
+       The content, title, meta tags and JSON-LD below are rewritten at runtime
+       from js/games-data.js. Adding a game needs no change here.
+
+       For fully static per-game pages (better for crawlers and link previews)
+       run:  node tools/build.js  → writes /games/<slug>/index.html
+       ========================================================================== -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2563EB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+
+  <title>Game | Bhushan Games</title>
+  <meta name="description" content="A game published by Bhushan Games — offline-first, free to start, built for Android.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://bborse.github.io/games.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Bhushan Games">
+  <meta property="og:title" content="Game | Bhushan Games">
+  <meta property="og:description" content="A game published by Bhushan Games.">
+  <meta property="og:url" content="https://bborse.github.io/games.html">
+  <meta property="og:image" content="https://bborse.github.io/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Game | Bhushan Games">
+  <meta name="twitter:description" content="A game published by Bhushan Games.">
+  <meta name="twitter:image" content="https://bborse.github.io/images/og-image.png">
+
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"></noscript>
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Replaced at runtime with the SoftwareApplication schema for this game -->
+  <script type="application/ld+json" id="gameSchema">{}</script>
+</head>
+
+<body data-page="game">
+
+  <div class="cursor" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="navbar is-scrolled" id="navbar">
+    <div class="navbar__mount" id="siteHeader"></div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+  <!-- The whole page body is generated from the game object -->
+  <main id="main"><div id="gameDetail"></div></main>
+
+  <footer class="footer" id="siteFooter"></footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <path d="M12 19V5m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Sticky install bar on phones, filled in from the current game -->
+  <div class="mobile-bar" id="mobileBar"></div>
+
+  <!-- Lightbox for the screenshot gallery -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Close screenshot viewer">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Previous screenshot">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="">
+      <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Next screenshot">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <script src="/js/games-data.js" defer></script>
+  <script src="/js/site-config.js" defer></script>
+  <script src="/js/templates.js" defer></script>
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

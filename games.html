@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ==========================================================================
+       BHUSHAN GAMES · Catalogue
+       The grid and the filter buttons are both generated from js/games-data.js.
+       ========================================================================== -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2563EB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F172A" media="(prefers-color-scheme: dark)">
+
+  <title>Our Games | Bhushan Games — Android Puzzle &amp; Casual Titles</title>
+  <meta name="description" content="Every game published by Bhushan Games: Merge 2248 Number Puzzle (live on Google Play) and ARROWS – Escape Puzzle (in testing). Free, offline-first Android games.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://bborse.github.io/games.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bhushan Games">
+  <meta property="og:title" content="Our Games | Bhushan Games">
+  <meta property="og:description" content="Every game published by Bhushan Games — live titles and what is coming next.">
+  <meta property="og:url" content="https://bborse.github.io/games.html">
+  <meta property="og:image" content="https://bborse.github.io/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Games | Bhushan Games">
+  <meta name="twitter:description" content="Every game published by Bhushan Games.">
+  <meta name="twitter:image" content="https://bborse.github.io/images/og-image.png">
+
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"></noscript>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body data-page="games">
+
+  <div class="cursor" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="navbar is-scrolled" id="navbar">
+    <div class="navbar__mount" id="siteHeader"></div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop" hidden></div>
+
+  <main id="main">
+
+    <section class="legal-hero">
+      <div class="container legal-hero__inner">
+        <h1>Our games</h1>
+        <p>
+          Every title we have published or announced. Live games are on Google Play right now;
+          the rest are in testing and open for invites.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Filter buttons are generated so a new status never needs new markup -->
+        <div class="filters" id="gameFilters" role="tablist" aria-label="Filter games by status"></div>
+        <p class="games-count" id="gamesCount" aria-live="polite"></p>
+
+        <!-- Cards are generated from js/games-data.js -->
+        <div class="games-grid" id="gamesGrid"></div>
+
+        <noscript>
+          <p class="games-empty">
+            Our catalogue is rendered with JavaScript. Enable it, or write to
+            <a href="mailto:bhushanborse220@gmail.com">bhushanborse220@gmail.com</a> and we will
+            send you the list of games directly.
+          </p>
+        </noscript>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta__bg" aria-hidden="true">
+        <span class="blob blob--cta-1"></span>
+        <span class="blob blob--cta-2"></span>
+      </div>
+      <div class="container cta__inner">
+        <h2 class="cta__title" data-animate="fade-up">Want the next one early?</h2>
+        <p class="cta__text" data-animate="fade-up" data-animate-delay="80">
+          We run closed testing before every launch. Ask for an invite and you will be
+          in the next batch.
+        </p>
+        <div class="cta__actions" data-animate="zoom-in" data-animate-delay="140">
+          <a class="btn btn--primary btn--lg" href="/contact.html" data-ripple>Request a testing invite</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="siteFooter"></footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <path d="M12 19V5m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="/js/games-data.js" defer></script>
+  <script src="/js/site-config.js" defer></script>
+  <script src="/js/templates.js" defer></script>
+  <script src="/js/site.js" defer></script>
+</body>
+</html>
